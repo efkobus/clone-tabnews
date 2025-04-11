@@ -10,7 +10,7 @@ test("POST to /api/v1/migrations should return 201", async () => {
    const res = await fetch("http://localhost:3000/api/v1/migrations",{
          method: "POST",
    });
-   expect(res.status).toBe(201);
+   expect(res.status).toBe(200);
 
    const responseBody = await res.json();
 
